@@ -11,7 +11,7 @@ import com.example.lmapp.backendlm.service.OpenAIService;
 
 @RestController
 @RequestMapping("/api/chat")
-@CrossOrigin(origins = "http://localhost:4200") // allow frontend to access this
+@CrossOrigin(origins = "https://taupe-wisp-b654bd.netlify.app") // allow frontend to access this
 public class OpenAIController {
 
     @Autowired
@@ -35,3 +35,4 @@ public class OpenAIController {
         }
     }
 }
+
