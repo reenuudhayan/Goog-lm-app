@@ -13,6 +13,7 @@ import com.example.lmapp.backendlm.service.OpenAIService;
 import com.example.lmapp.dto.ChatRequest;
 
 @RestController
+@CrossOrigin(origins = "https://taupe-wisp-b654bd.netlify.app")
 @RequestMapping("/api")
 public class ChatController {
 
@@ -37,3 +38,4 @@ public class ChatController {
         return ResponseEntity.ok(response);
     }
 }
+
