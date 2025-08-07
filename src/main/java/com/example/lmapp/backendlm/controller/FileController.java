@@ -26,7 +26,7 @@ import com.example.lmapp.backendlm.service.FileStorageService;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:4200") 
+@CrossOrigin(origins = "https://taupe-wisp-b654bd.netlify.app") 
 public class FileController {
     @Autowired
     private FileStorageService fileStorageService;
@@ -61,5 +61,6 @@ public ResponseEntity<Resource> getFile(@PathVariable String filename) throws IO
         .header(HttpHeaders.CONTENT_DISPOSITION, "inline; filename=\"" + resource.getFilename() + "\"")
         .body(resource);
 }
+
 
 }
